@@ -6,11 +6,13 @@ public class CritAprov {
     double NotaUm,NotaDois,NotaFinal;
 
     public void aprovacao(){
-        System.out.println("Informar Nota um aulo: ");
+        System.out.println("Informar Primeira nota: ");
         NotaUm = ler.nextDouble();
         System.out.println("informar segunda nota: ");
         NotaDois = ler.nextDouble();
         NotaFinal = NotaUm + NotaDois / 2;
+        
+        
        
 
 
