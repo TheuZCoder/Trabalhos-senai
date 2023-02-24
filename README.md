@@ -6,4 +6,4 @@ sites para aprendizagem de HTML
 https://www.w3schools.com/tags/ref_byfunc.asp //
 https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element //.
 
-sites para aprendizagem de CSS //https://www.w3schools.com/cssref/default.asp//https://developer.mozilla.org/pt-BR/docs/Web/CSS/Reference//
+sites para aprendizagem de CSS // https://www.w3schools.com/cssref/default.asp // https://developer.mozilla.org/pt-BR/docs/Web/CSS/Reference //
