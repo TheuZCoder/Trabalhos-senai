@@ -1,0 +1,14 @@
+body {
+    background-color: darkgray;
+}
+
+#menu {
+    width: 100%;
+    height: 60px;
+    background-color: red;
+}
+
+.linkMenu {
+    color: aliceblue;
+    font-size: 2em;
+}
