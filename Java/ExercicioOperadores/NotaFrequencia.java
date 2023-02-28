@@ -5,11 +5,13 @@ import java.util.Scanner;
 /**
  * NotaFrequencia
  */
+
 public class NotaFrequencia {
     Scanner leitura = new Scanner(System.in);
-    int nota1, nota2, frenquenciaAluno;
-    double mediaAluno;
-    boolean aprovado;
+    int nota1, nota2;
+    double mediaAluno, frenquenciaAluno;
+    boolean aprovado,mediaAprovado;
+
     public void calcular() {
         System.out.println("Informe a primeira Nota: ");
         nota1 = leitura.nextInt();
@@ -29,11 +31,12 @@ public class NotaFrequencia {
         } else {
             System.out.println("Reprovado");
         }
-        if (mediaAluno==true) && (frenquenciaAluno==true){
-            System.out.println("O aluno foi APROVADO no curso!!!");
+        mediaAprovado = mediaAluno==frenquenciaAluno;
+        if (mediaAprovado==true) {
+            System.out.println("O aluno foi REPROVADO no curso!!!");
         }
         else {
-            System.out.println("O aluno foi REPROVADO no curso!!!");
+            System.out.println("O aluno foi APROVADO no curso!!!"); 
         }
     }
 }
