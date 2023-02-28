@@ -60,14 +60,11 @@ public class Operadores {
                 + primeiraVariavel + " e o da segunda é "
                 + segundaVariavel + ".");
         boolean primeiraVariavelEMaiorQueASegunda = primeiraVariavel > segundaVariavel;
-        System.out.println("Primeira variável é maior que a segunda? "
-                + primeiraVariavelEMaiorQueASegunda);
+        System.out.println("Primeira variável é maior que a segunda? "+ primeiraVariavelEMaiorQueASegunda);
         boolean primeiraVariavelEMenorQueASegunda = primeiraVariavel < segundaVariavel;
-        System.out.println("Primeira variável é menor que a segunda? "
-                + primeiraVariavelEMenorQueASegunda);
+        System.out.println("Primeira variável é menor que a segunda? "+ primeiraVariavelEMenorQueASegunda);
         boolean primeiraVariavelEMaiorIgualASegunda = primeiraVariavel >= segundaVariavel;
-        System.out.println("Primeira variável é maior ou igual a segunda? "
-                + primeiraVariavelEMaiorIgualASegunda);
+        System.out.println("Primeira variável é maior ou igual a segunda? "+ primeiraVariavelEMaiorIgualASegunda);
         boolean primeiraVariavelEMenorIgualASegunda = primeiraVariavel <= segundaVariavel;
         System.out.println("Primeira variável é menor ou igual a segunda? "
                 + primeiraVariavelEMenorIgualASegunda);
