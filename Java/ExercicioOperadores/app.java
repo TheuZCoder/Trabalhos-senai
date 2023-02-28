@@ -6,3 +6,4 @@ public class app {
     objeto1.calcular();
     }
 }
+
