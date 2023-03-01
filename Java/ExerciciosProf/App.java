@@ -14,6 +14,5 @@ public class App {
         objeto5.VerificaSenha();
         Exercicio6 objeto6 = new Exercicio6();
         objeto6.VerificaSenha();
-        
     }
 }
