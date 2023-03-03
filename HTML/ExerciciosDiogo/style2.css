@@ -1,0 +1,15 @@
+body img {
+    width: 150px;
+    height: 150px;
+}
+body {
+    text-align: center;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    font-family: Arial, sans-serif;
+}
+
+#menu {
+    text-align: center;
+    background-color: aliceblue;
+}
