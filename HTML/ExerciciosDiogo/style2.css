@@ -13,3 +13,6 @@ body {
     text-align: center;
     background-color: aliceblue;
 }
+header {
+    top: 0;
+}
