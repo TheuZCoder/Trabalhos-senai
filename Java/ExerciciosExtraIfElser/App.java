@@ -8,7 +8,9 @@ public class App {
         //objeto2.nota();
         //Letra objeto3 = new Letra();
         //objeto3.Letras();
-        Extra objeto4 = new Extra();
-        objeto4.salario();
+        //Extra objeto4 = new Extra();
+        //objeto4.salario();
+        Imposto objeto5 = new Imposto();
+        objeto5.Iprf();
     }
 }
