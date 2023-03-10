@@ -38,14 +38,14 @@ nav {
     margin: 0;
   }
   .banner {
-    border-radius: 4%;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      margin-right: auto;
+      margin-left: auto;
+      border-radius: 4%;
     width: 90%;
     height: 600px;
     padding: 60px;
-    margin-right: auto;
-    margin-left: auto;
     display: table;
     box-shadow: -1px -2px 5px 13px rgba(230,225,225,0.75);
 }
@@ -82,3 +82,24 @@ nav {
     font-size: 22px;
     float: right;
 }
+.panel:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+.panel-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .panel {
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    width: 15%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #272525;
+  }
+  
