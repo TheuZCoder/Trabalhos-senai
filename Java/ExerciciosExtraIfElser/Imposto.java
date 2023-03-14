@@ -12,6 +12,7 @@ public class Imposto {
         valorHora = leitura.nextDouble();
         System.out.println("Quantas horas foram trabalhadas?: ");
         horaTrabalhada = leitura.nextDouble();
+        
         salarioBruto = valorHora * horaTrabalhada;
 
         if (salarioBruto <= 900) {

@@ -4,49 +4,54 @@ import java.util.Scanner;
 
 public class Exercicios {
     Scanner sc = new Scanner(System.in);
-    public void exe1(){
+
+    public void exe1() {
         System.out.println("Informe um numero:");
         double numero1 = sc.nextDouble();
         System.out.println("Informe outro numero:");
         double numero2 = sc.nextDouble();
-        if (numero1>numero2){
-            System.out.println("O maior numero é: "+numero1);
+        if (numero1 > numero2) {
+            System.out.println("O maior numero é: " + numero1);
         } else {
-            System.out.println("O maior numero é: "+numero2);
+            System.out.println("O maior numero é: " + numero2);
         }
     }
-    public void exe2(){
+
+    public void exe2() {
         System.out.println("Informe o ano de nacimento: ");
         double ano = sc.nextDouble();
-        double ano2 = 2023-ano;
-        if(ano2>=16){
+        double ano2 = 2023 - ano;
+        if (ano2 >= 16) {
             System.out.println("Você podera votar esse ano!!");
-        }else{
+        } else {
             System.out.println("Você não podera votar esse ano!!");
         }
     }
-    public void exe3(){
+
+    public void exe3() {
         System.out.println("Informe a senha:");
         double s1 = sc.nextDouble();
         double s2 = 1234;
-        if(s1==s2){
+        if (s1 == s2) {
             System.out.println("ACESSO PERMITIDO");
-        }else{
+        } else {
             System.out.println("ACESSO NEGADO");
         }
     }
-    public void exe4(){
+
+    public void exe4() {
         System.out.println("Informe a quantidade de maças:");
         double quantidade = sc.nextDouble();
         double preco;
-        if(quantidade==12){
+        if (quantidade == 12) {
             preco = 0.25;
-        }else{
+        } else {
             preco = 0.30;
         }
-        double custo = quantidade*preco;
-        System.out.println("O custo total será: R$"+custo);
+        double custo = quantidade * preco;
+        System.out.println("O custo total será: R$" + custo);
     }
+
     public void exe5() {
         System.out.println("Infomer o primeiro numero: ");
         double n1 = sc.nextDouble();
