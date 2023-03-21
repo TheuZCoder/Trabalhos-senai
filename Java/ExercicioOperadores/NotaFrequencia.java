@@ -33,9 +33,9 @@ public class NotaFrequencia {
         }
         mediaAprovado = mediaAluno == frenquenciaAluno;
         if (mediaAprovado = true) {
-            System.out.println("O aluno foi REPROVADO no curso!!!");
-        } else {
             System.out.println("O aluno foi APROVADO no curso!!!");
+        } else {
+            System.out.println("O aluno foi REPROVADO no curso!!!");
         }
     }
 }
