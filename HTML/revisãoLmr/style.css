@@ -1,0 +1,42 @@
+body {
+    display: block;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    background-color: aliceblue;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav img {
+    height: 70px;
+}
+.nav .linkmenu {
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+}
+.nav .menu{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.nav .hamburguer{
+    display: none;
+}
+body .d1 {
+    display: flex;
+    margin-left: 10%;
+    width: 80%;
+}
+body .t1 {
+    display: flex;
+    margin-left: 10%;
+    width: 80%;
+}
+.imagem {
+    width: 25%;
+}
