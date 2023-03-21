@@ -13,7 +13,7 @@ public class CustoViagem {
                 KMporLitro = ler.nextDouble();
                 custoViagem = distanciaPercorrida / KMporLitro * preçoDaGasolina;
         
-       System.out.println("O custo da sua viagem foi de %2.f %n" + custoViagem + " Reais" );
+       System.out.println("O custo da sua viagem foi de " + custoViagem + " Reais" );
         System.out.println("=================Programa finalizado===============");
         }
     }
