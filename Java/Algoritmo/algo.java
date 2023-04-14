@@ -16,8 +16,9 @@ public class algo {
                     decimal += base;
                 }
                 base *= 2;
+                System.out.println("O valor decimal é: " + decimal);
+                sc.close();
             }
-            System.out.println("O valor decimal é: " + decimal);
     }
         public void DecToBin() {
             Scanner sc = new Scanner(System.in);
@@ -30,6 +31,7 @@ public class algo {
                 decimal /= 2;
             }
             System.out.println("O código binário é: " + binario);
+            sc.close();
         }
         public void TextoToBin(){
             Scanner sc = new Scanner(System.in);
@@ -41,6 +43,7 @@ public class algo {
             binario.append(String.format("%8s", bin).replace(' ', '0'));
         }
         System.out.println("O código binário da frase é: " + binario.toString());
+        sc.close();
     }
 }
         
