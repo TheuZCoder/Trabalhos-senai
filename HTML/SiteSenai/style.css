@@ -214,6 +214,8 @@ body {
   }
   .hamburguer{
     display: inline;
+    width: 45px;
+    cursor: pointer;
   }
   header nav{
     display: none;
