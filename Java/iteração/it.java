@@ -93,7 +93,9 @@ public class it {
     }
 
     public void ex3() {
-        // Scanner leitura = new Scanner(System.in);
+        Scanner leitura = new Scanner(System.in);
+        double notas[] = new double[4];
+        
 
     }
 }
