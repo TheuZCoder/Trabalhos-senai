@@ -6,6 +6,29 @@ import java.util.Scanner;
  * it
  */
 public class it {
+    public void ex0() {
+        Scanner leitura = new Scanner(System.in);
+        // criar um vetor para receber 4 notas
+        double vetorNotas[] = new double[4];
+        // preencher o vetor com 4 notas "fori"
+        for (int i = 0; i < vetorNotas.length; i++) {
+            // pedir para digitar a nota e ler ela
+            System.out.println("digite a nota " + (i + 1));
+            vetorNotas[i] = leitura.nextDouble();
+        }
+        // printar as notas e calcular a média "fori"
+        double media = 0;
+        for (int i = 0; i < vetorNotas.length; i++) {
+            System.out.println("Nota " + (i + 1) + "=" + vetorNotas[i]);
+            media += vetorNotas[i]; //acumular o valor das notas do vetor
+        }
+        //dividir a média pelo numero de notas
+        media /= vetorNotas.length;
+        //mostrar a média
+        System.out.println("A média do aluno é "+ media);
+        leitura.close();
+    }
+
     public void ex1() {
         Scanner leitura = new Scanner(System.in);
         char[] vetor = new char[10];
@@ -68,4 +91,9 @@ public class it {
 
         leitura.close();
     }
-}   
+
+    public void ex3() {
+        // Scanner leitura = new Scanner(System.in);
+
+    }
+}
