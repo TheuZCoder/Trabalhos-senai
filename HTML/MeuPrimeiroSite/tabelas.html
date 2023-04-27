@@ -6,11 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+        table {
+         
+        }
+        .esqdir {
+            display: flex;
+            justify-content: space-around;
+        }
+        .esquerdo{
+           
+        }
+    </style>
 </head>
 
 <body>
     <h1>Criação de tabelas</h1>
-    <table border="1">
+    <table style="border: 1px solid rgb(180, 178, 178); border-collapse: collapse;">
         <thead>
             <th width="100px">A</th>
             <th width="100px">B</th>
@@ -47,16 +59,40 @@
         <li>Item 2</li>
         <li>Item 3</li>
     </ul>
-    <table style="border: 1px solid black; border-collapse: collapse;">
+
+    <div class="esqdir">
+
+    <table class="esquerdo" style="border: 1px solid rgb(180, 178, 178); border-collapse: collapse;">
+        <thead>
+            <td bgcolor="#cfcdcd">adsadads</td>
+        </thead>
         <tr>
-          <td style="border: 1px solid black; padding: 10px;">Célula 1,1</td>
-          <td style="border: 1px solid black; padding: 10px;">Célula 1,2</td>
+          <td >Célula 1,1</td>
+          <td >Célula 1,2</td>
         </tr>
         <tr>
-          <td style="border: 1px solid black; padding: 10px;">Célula 2,1</td>
-          <td style="border: 1px solid black; padding: 10px;">Célula 2,2</td>
+          <td >Célula 2,1</td>
+          <td >Célula 2,2</td>
         </tr>
       </table>
+
+
+      <table style="border: 1px solid #cfcdcd; border-collapse: collapse;">
+        <thead>
+            <td bgcolor="#cfcdcd">adsadads</td>
+        </thead>
+        <tr>
+          <td >Célula 1,1</td>
+          <td >Célula 1,2</td>
+        </tr>
+        <tr>
+          <td >Célula 2,1</td>
+          <td >Célula 2,2</td>
+        </tr>
+      </table>
+
+    </div>
+
 </body>
 
 </html>
