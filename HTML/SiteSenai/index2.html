@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos de Compras</title>
+    <STYle>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .boxp {
+            background-color: white;
+            display: flex inline-block;
+        }
+
+        .box {
+
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .esqdir {
+            display: flex;
+        }
+
+        .tabela {
+            border: 1px solid #e9e8e8;
+            border-collapse: collapse;
+
+        }
+
+        .empresa {
+            border: 1px solid #e9e8e8;
+            border-collapse: collapse;
+            margin-right: 15px;
+        }
+
+        .fornecedor {
+            border: 1px solid #e9e8e8;
+            border-collapse: collapse;
+        }
+
+        .observacoes {
+            border: 1px solid #e9e8e8;
+            border-collapse: collapse;
+        }
+
+        .pedido {
+            border: 1px solid #e9e8e8;
+            border-collapse: collapse;
+        }
+
+        font {
+
+            padding: 5px;
+            margin: 5px;
+        }
+
+        table {
+            margin: 5px;
+
+        }
+    </style>
+</HEAD>
+
+<BODY bgProperties=fixed bgColor=#f7f6f6 background="">
+    <div class="box">
+            <div class="boxp">
+                <TABLE class="boxp" cellSpacing=0 width="100%" border=0 height="1">
+                    <TBODY>
+                        <TABLE class="caixa" height=1 width="100%" border=0>
+                            <TBODY>
+                                <TABLE class="" height=1 width="100%" border=0>
+                                    <TBODY>
+                                        <nav>
+                                            <p>
+                                                <br>
+                                                <font face="Arial" color="#000080" size="5"><STRONG>PEDIDO DE COMPRA
+                                                    </strong>#%num% </font>
+                                            </p>
+                                            <img src="https://www.zaccaria.com.br/externo/logo_zaccaria2.png" vspace="15" hspace="50" alt="logo zaccaria"
+                                                width="20%">
+                                        </nav>
+                                        <tr>
+                                            <TD vAlign=top width="132%" height=8 colspan="2">
+                                                &nbsp;</TD>
+                                        </tr>
+                                    </TBODY>
+                                </TABLE>
+                                <div class="esqdir">
+                                    <TABLE class="empresa" height=1 width="100%" border=0>
+                                        <TBODY>
+                                            <tr>
+                                                <TD vAlign=top width="132%" height=8 colspan="2" bgcolor="#D8D8D8">
+                                                    <p><b>
+                                                            <font face="Arial">DADOS DA EMPRESA</font>
+                                                        </b></p>
+                                                </TD>
+                                            </tr>
+                                            <tr>
+                                                <TD vAlign=top width="132%" height=8 colspan="2">
+                                                    <font face="Arial" size="2"><b>Endereço
+                                                        </b>:&nbsp;%end_emp%</font>
+                                                </TD>
+                                            </tr>
+                                            <tr>
+                                                <TD vAlign=top width="50%" height=8 >
+                                                    <FONT face=Arial size=2><B>Empresa</B>: %empresa%
+                                                    </FONT>
+                                                </TD>
+                                                <TD vAlign=top width="49%" height=8>
+                                                    <FONT face=Arial size=2><B>Cep</B>:&nbsp;%cep_emp%</FONT>
+                                                </TD>
+                                            </tr>
+                                            <tr>
+                                                <TD vAlign=top width="100%" height=8 >
+                                                    <FONT face=Arial size=2><B>Município/UF</B>: %mun_emp% - %est_emp% - Brasil
+                                                    </FONT>
+                                                </TD>
+                                
+                                            </tr>
+                                            <tr>
+                                                <TD vAlign=top width="50%" height=8>
+                                                    <FONT face=Arial size=2><B>Fone</B>: %fone_emp%</FONT>
+                                                </TD>
+                                                <TD vAlign=top width="49%" height=8>
+                                                    <FONT face=Arial size=2><B>Fax</B>:&nbsp;%fax_emp%</FONT>
+                                                </TD>
+                                            </tr>
+                                            <tr>
+                                                <TD vAlign=top width="30%" height=8>
+                                                    <FONT face=Arial size=2><B>Inscrição Estadual</B>: %ie_emp%
+                                                    </FONT>
+                                                </TD>
+                                                <TD vAlign=top width="70%" height=8>
+                                                    <FONT face=Arial size=2><B>CNPJ/CPF</B>:&nbsp;%cgc_emp%
+                                                    </FONT>
+                                                </TD>
+                                            </tr>
+                                            <tr>
+                                                <TD vAlign=top width="132%" height=8 colspan="2">
+                                                    &nbsp;</TD>
+                                            </tr>
+                                            <tr>
+                                                <TD vAlign=top width="132%" height=8 colspan="2">
+                                                    &nbsp;</TD>
+                                            </tr>
+
+                                        </TBODY>
+                                    </TABLE>
+
+                                    <TABLE class="fornecedor" height=1 width="100%" border=0>
+                                        <TBODY>
+                                            <tr>
+                                                <TD vAlign=top width="132%" height=8 colspan="2" bgcolor="#D8D8D8">
+                                                    <p><b>
+                                                            <font face="Arial">DADOS DO FORNECEDOR</font>
+                                                        </b></p>
+                                                </TD>
+                                            </tr>
+                                            <tr>
+                                                <TD vAlign=top width="50%" height=8>
+                                                    <FONT face=Arial size=2><B>Nome</B> : %codforn% - %nome%
+                                                    </FONT>
+                                                </TD>
+                                                <TD vAlign=top width="49%" height=8>
+                                                    <FONT face=Arial size=2><B>Contato</B>: %contato%</FONT>
+                                                </TD>
+                                            </tr>
+                                            <tr>
+                                                <TD vAlign=top width="50%" height=8>
+                                                    <font face="Arial" size="2"><b>Endereço
+                                                        </b>:&nbsp;%end%</font>
+                                                </TD>
+                                                <TD vAlign=top width="49%" height=8>
+                                                    <font face="Arial" size="2"><b>Bairro:
+                                                        </b>%bairro%</font>
+                                                </TD>
+                                            </tr>
+                                            <tr>
+                                                <TD vAlign=top width="50%" height=8>
+                                                    <FONT face=Arial size=2><B>Município/UF</B>: %mun% - %est% -
+                                                        %pais%
+                                                    </FONT>
+                                                </TD>
+                                                <TD vAlign=top width="49%" height=8>
+                                                    <FONT face=Arial size=2><B>Cep</B>:&nbsp;%cep%</FONT>
+                                                </TD>
+                                            </tr>
+                                            <tr>
+                                                <TD vAlign=top width="50%" height=8>
+                                                    <FONT face=Arial size=2><B>Fone</B>: (%ddd%) %fone%</FONT>
+                                                </TD>
+                                                <TD vAlign=top width="49%" height=8>
+                                                    <FONT face=Arial size=2><B>Fax</B>:&nbsp;(%ddd%) %fax%
+                                                    </FONT>
+                                                </TD>
+                                            </tr>
+                                            <tr>
+                                                <TD vAlign=top width="50%" height=8>
+                                                    <FONT face=Arial size=2><B>Inscrição Estadual</B>: %ie%
+                                                    </FONT>
+                                                </TD>
+                                                <TD vAlign=top width="49%" height=8>
+                                                    <FONT face=Arial size=2><B>CNPJ/CPF</B>:&nbsp;%cgc%</FONT>
+                                                </TD>
+                                            </tr>
+                                            <tr>
+                                                <TD vAlign=top width="50%" height=8>
+                                                    <font face="Arial" size="2"><b>Home
+                                                            page</b>: %hp%</font>
+                                                </TD>
+                                                <TD vAlign=top width="49%" height=8>
+                                                    <FONT face=Arial size=2><B>E-mail</B>:&nbsp;%email%</FONT>
+                                                </TD>
+                                            </tr>
+                                            <tr>
+                                                <TD vAlign=top width="132%" height=1 colspan="2">
+                                                    &nbsp;</TD>
+                                            </tr>
+                                        </TBODY>
+                                    </TABLE>
+                                </div>
+                                <TABLE class="pedido" height=1 width="99%" border=0>
+                                    <TBODY>
+                                        <tr>
+                                            <TD vAlign=top width="100%" height=1 colspan="2" bgcolor="#D8D8D8">
+                                                <p><b>
+                                                        <font face="Arial">DADOS DO PEDIDO</font>
+                                                    </b>
+                                            </TD>
+                                        </tr>
+
+
+                                        <tr>
+                                            <TD vAlign=top width="50%" height=1>
+                                                <font face="Arial" size="2"><b>Data
+                                                        de Emissão:</b> %emissao%&nbsp;</font>
+                                            </TD>
+                                            <TD vAlign=top width="49%" height=1>
+                                                <font face="Arial" size="2"><b>Condição de Pagamento:</b> %cond%</font>
+                                            </TD>
+                                        </tr>
+                                        <tr>
+                                            <TD vAlign=top width="50%" height=1>
+                                                <font face="Arial" size="2"><b>Comprador:</b>
+                                                    %comprador%&nbsp;</font>
+                                            </TD>
+                                            <TD vAlign=top width="49%" height=1>
+                                                <font face="Arial" size="2"><b>Tipo
+                                                        do Frete:</b> %tpfrete%</font>
+                                            </TD>
+                                        </tr>
+                                        <tr>
+                                            <TD vAlign=top width="132%" height=1 colspan="2">
+                                                <font face="Arial" size="2"><b>Moeda:</b>
+                                                    %moeda%&nbsp;</font>
+                                            </TD>
+                                        </tr>
+                                    </TBODY>
+                                </TABLE>
+                            </TBODY>
+                        </TABLE>
+
+                        <TABLE class="tabela box" cellSpacing="1" cellPadding="2" width="1159" border="0" height="78">
+                            <tbody>
+                                <tr>
+                                    <td width="61" height="5" bgcolor="#D8D8D8">
+                                        <p align="left">
+                                            <font face="Arial" size="2"><b>Item</b></font>
+                                        </p>
+                                    </td>
+                                    <td width="65" height="5" bgcolor="#D8D8D8">
+                                        <b>
+                                            <font face="Arial" size="2">Código</font>
+                                        </b>
+                                    </td>
+                                    <td width="892" height="5" bgcolor="#D8D8D8">
+                                        <b>
+                                            <font face="Arial" size="2">Descrição</font>
+                                        </b>
+                                    </td>
+                                    <td width="56" height="5" bgcolor="#D8D8D8">
+                                        <p align="right"><b>
+                                                <font face="Arial" size="2">Quant.</font>
+                                            </b>
+                                    </td>
+                                    <td width="50" height="5" bgcolor="#D8D8D8">
+                                        <p align="center">
+                                            <font face="Arial" size="2"><b>UM</b></font>
+                                    </td>
+
+                                    <td width="95" height="5" bgcolor="#D8D8D8">
+                                        <p align="right">
+                                            <font face="Arial" size="2"><b>Unit.</b></font> &nbsp;
+                                        </p>
+                                    </td>
+
+                                    <td width="93" height="5" bgcolor="#D8D8D8">
+                                        <p align="right">
+                                            <font face="Arial" size="2"><b>Total</b></font>
+                                        </p>
+                                    </td>
+
+                                    <td width="93" height="5" bgcolor="#D8D8D8">
+                                        <p align="right"><b>
+                                                <font size="2" face="Arial">IPI</font>
+                                            </b>
+                                    </td>
+
+                                    <td width="93" height="5" bgcolor="#D8D8D8">
+                                        <p align="center"><b>
+                                                <font size="2" face="Arial">Entrega</font>
+                                            </b>
+                                    </td>
+                                    <td width="46" height="5" bgcolor="#D8D8D8">
+                                        <p align="center"><b>
+                                                <font face="Arial" size="2">2ª Qtd</font>
+                                            </b>
+                                    </td>
+
+                                    <td width="60" height="5" bgcolor="#D8D8D8">
+                                        <p align="center"><b>
+                                                <font face="Arial" size="2">2ª UM.</font>
+                                            </b>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td width="61" height="16">
+                                        <font face="Arial" size="1">%it.it%</font>
+                                    </td>
+                                    <td width="65" height="16">
+                                        <font face="Arial" size="1">%it.cod%</font>
+                                    </td>
+                                    <td width="892" height="16">
+                                        <font face="Arial" size="1">%it.desc%</font>
+                                    </td>
+                                    <td width="56" height="16">
+                                        <p align="right">
+                                            <font face="Arial" size="1">%it.qtd%</font>
+                                        </p>
+                                    </td>
+
+                                    <td width="50" height="16">
+                                        <p align="center">
+                                            <font face="Arial" size="1">%it.um%</font>
+                                        </p>
+                                    </td>
+                                    <td width="95" height="16">
+                                        <p align="right">
+                                            <font face="Arial" size="1">%it.unit%</font>
+                                    </td>
+                                    <td width="93" height="16">
+                                        <p align="right">
+                                            <font face="Arial" size="1">%it.tot%</font>
+                                        </p>
+                                    </td>
+                                    <td width="93" height="16">
+                                        <p align="right">
+                                            <font face="Arial" size="1">%it.ipi%</font>
+                                        </p>
+                                    </td>
+                                    <td width="93" height="16">
+                                        <p align="center">
+                                            <font face="Arial" size="1">%it.ent%</font>
+                                        </p>
+                                    </td>
+
+                                    <td width="46" height="16">
+                                        <p align="center">
+                                            <font face="Arial" size="1">%it.um2%</font>
+                                        </p>
+                                    </td>
+                                    <td width="60" height="16">
+                                        <p align="center">
+                                            <font face="Arial" size="1">%it.qtd2%</font>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="1219" height="16" colspan="6">
+                                        <p align="right"><b>
+                                                <font face="Arial" size="2">%tt.desc%</font>
+                                            </b>
+                                    </td>
+                                    <td width="93" height="16">
+                                        <p align="right">
+                                            <font face="Arial" size="1">%tt.vlr%</font>
+                                    </td>
+                                    <td width="93" height="16">
+                                        &nbsp;
+                                    </td>
+                                    <td width="93" height="16">
+                                        &nbsp;
+                                    </td>
+
+                                </tr>
+                            </TBODY>
+                        </TABLE>
+
+
+
+                        <TABLE class="observacoes" width="99%" border="0" height="5">
+                            <tr>
+                                <td width="100%" height="1" bgcolor="#D8D8D8">
+                                    <p align="left"><b>
+                                            <font face="Arial" size="2">OBSERVAÇÕES</font>
+                                        </b></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%" height="1">
+                                    <strong>
+                                        <font face="Arial" size="2" color="#FF0000">%obsforpc%</font>
+                                    </strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%" height="1">
+                                    <font face="Arial" size="2" color="#FF0000">Não enviar materiais com quantidades
+                                        e/ou preços diferentes do Pedido sem ter uma autorização prévia do comprador responsável.</font>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%" height="1">
+                                    <font face="Arial" size="2">Não responda este e-mail.
+                                        Para fazer contatos, utilize o e-mail do comprador (%email_comp%).</font>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%" height="1">
+                                    <font face="Arial" size="2">Nosso horário de recebimento:
+                                        de Segunda à Quinta das 08:00h às 11:00h e das 13:00h às 16:30;
+                                        Sexta, somente até às 15:30h.</font>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%" height="1">
+                                    <font face="Arial" size="2">Só aceitaremos a mercadoria
+                                        se na sua nota fiscal constar o número do nosso pedido de compras
+                                        (%num%).</font>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%" height="1">
+                                    <font face="Arial" size="2">&nbsp;</font>
+                                </td>
+                            </tr>
+                        </TABLE>
+                        <table width="100%" border="0" height="33">
+                            <tr>
+                                <td width="100%" height="1">
+                                    <p align="center">
+                                        <font face="Arial" size="2">Número do processo
+                                            para rastreamento %wf_Id%</font>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%" height="12">
+                                    <font face="Arial" size="2"><b>&nbsp;</b></font>
+                                </td>
+                            </tr>
+                        </table>
+                        </TD>
+                        </TR>
+                    </TBODY>
+                </TABLE>
+            </div>
+    </div>
+</BODY>
+
+</HTML>
