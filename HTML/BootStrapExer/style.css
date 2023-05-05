@@ -1,0 +1,10 @@
+.btn-secondary {
+    border-color: white;
+    background: white;
+    color: black;
+    
+}
+
+.btn-primary :hover {
+    background-color: white;
+}
