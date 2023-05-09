@@ -113,24 +113,21 @@ public class MatrizExemplo {
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz.length; j++) {
                 matriz[i][j] = rd.nextInt(9);
-                if (Valor == matriz[i][j]) {
-                    System.out.println("o valor foi localizado na coluna "+ localizadorC+ " linha "+ localizadoL);
-                    localizadorC = j+1;
-                    localizadoL = i+1;              
-                } else {
-                    System.out.println("Valor não enconttrado");
-                }
-            }
-           
+            } 
         }
         for (int i = 0; i < 5; i++) { 
-            System.out.print("| ");
             for (int j = 0; j < 5; j++) { 
 
-                System.out.print(matriz[i][j]+"  ");
-
+                if (Valor == matriz[i][j]) {
+                    localizadorC = j+1;
+                    localizadoL = i+1;   
+                }
             }
-            System.out.println("|");
+        }
+        if (Valor != 0) {
+            System.out.println("o valor foi localizado na coluna "+ localizadorC+ " linha "+ localizadoL);
+        } else {
+            System.out.println("Valor não enconttrado");
         }
         
     }
