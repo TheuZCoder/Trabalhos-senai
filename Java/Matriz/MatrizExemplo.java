@@ -54,7 +54,85 @@ public class MatrizExemplo {
             }
             System.out.println("|");
         }
+
         
+    }
+    public void Exercicio1Extra() {
+        int matriz[][] = new int[4][4];
+
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz.length; j++) {
+                    matriz[i][j] = i+1 * j+1;          
+            }
+            
+        }
+        for (int i = 0; i < 4; i++) { 
+            System.out.print("| ");
+            for (int j = 0; j < 4; j++) { 
+
+                System.out.print(matriz[i][j]+"  ");
+
+            }
+            System.out.println("|");
+        }
+    }
+    public void Exercicio2Extra() {
+        int matriz[][] = new int[4][4], MaiorValor=0,localizadorC=0,localizadoL=0;
+
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz.length; j++) {
+                matriz[i][j] = rd.nextInt(9);
+                if (matriz[i][j] >= MaiorValor) {
+                    MaiorValor = matriz[i][j];
+                    localizadorC = j+1;
+                    localizadoL = i+1;
+                    
+                }
+                
+            }
+           
+        }
+        for (int i = 0; i < 4; i++) { 
+            System.out.print("| ");
+            for (int j = 0; j < 4; j++) { 
+
+                System.out.print(matriz[i][j]+"  ");
+
+            }
+            System.out.println("|");
+        }
+        System.out.println("O maior valor é "+MaiorValor+" localizado na coluna "+ localizadorC + " na linha "+ localizadoL);
+    }
+    public void Exercicio3Extra() {
+        int matriz[][] = new int[5][5], Valor,localizadorC=0,localizadoL=0;
+        Scanner leitura = new Scanner(System.in);
+        System.out.println("Digite um numero a ser pesquisado: ");
+        Valor = leitura.nextInt();
+        
+
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz.length; j++) {
+                matriz[i][j] = rd.nextInt(9);
+                if (Valor == matriz[i][j]) {
+                    System.out.println("o valor foi localizado na coluna "+ localizadorC+ " linha "+ localizadoL);
+                    localizadorC = j+1;
+                    localizadoL = i+1;              
+                } else {
+                    System.out.println("Valor não enconttrado");
+                }
+            }
+           
+        }
+        for (int i = 0; i < 5; i++) { 
+            System.out.print("| ");
+            for (int j = 0; j < 5; j++) { 
+
+                System.out.print(matriz[i][j]+"  ");
+
+            }
+            System.out.println("|");
+        }
         
     }
 }
+
