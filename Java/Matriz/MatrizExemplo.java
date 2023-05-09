@@ -20,6 +20,14 @@ public class MatrizExemplo {
             }
 
         }
-        
+        //impressão dos elementos da matriz de forma individual 
+        for(int i=0; i<10; i++){
+            for(int j=0; j<9;j++){
+                System.out.println("matriz["+i+"]["+j+"]="
+                +matriz[i][j]);
+
+
+            }
+        }
     }
 }
