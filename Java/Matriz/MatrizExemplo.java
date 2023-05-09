@@ -29,8 +29,8 @@ public class MatrizExemplo {
             somal += matriz[3][i];
             somac += matriz[i][3]; 
         }
-        System.out.println(somal);
-        System.out.println(somac);
+        System.out.println("a soma da quarta linha é "+somal);
+        System.out.println("a soma da quarta coluna é "+somac);
         
         
     }
