@@ -121,6 +121,7 @@ public class MatrizExemplo {
         } else {
             System.out.println("Valor não enconttrado");
         }
+        leitura.close();
     }
     public void Exercicio4Extra() {
         int A[][] = new int[10][10];
@@ -172,6 +173,7 @@ public class MatrizExemplo {
         }
         mediafinal = SomaNotas / matriz.length;
         System.out.println("Média aritmética das notas finais " + mediafinal);
+        leitura.close();
     }
     public void Exercicio6Extra() {
         int A[][] = new int[3][3];
@@ -207,5 +209,6 @@ public class MatrizExemplo {
             }
             System.out.println("|");
         }
+        leitura.close();
     }
 }
