@@ -132,7 +132,8 @@ public class MatrizExemplo {
         
     }
     public void Exercicio5Extra() {
-        int matriz[][] = new int[5][4], NotaMaior=matriz[0][3],MatriculaMaior=matriz[0][0];
+        int matriz[][] = new int[5][4], NotaMaior=matriz[0][3],MatriculaMaior=matriz[0][0],SomaNotas=0;
+        double mediafinal;
         Scanner leitura = new Scanner(System.in);
         
         for (int i = 0; i < matriz.length; i++) { 
@@ -152,7 +153,11 @@ public class MatrizExemplo {
                 MatriculaMaior = matriz[i][0];
             }
             System.out.println("Matricula com maior nota final " + MatriculaMaior);
-        
+            for (int j = 0; j < matriz.length; j++) {
+                SomaNotas += matriz[i][3];
+            }
+            mediafinal = SomaNotas / matriz.length;
+            System.out.println("Média aritmética das notas finais "+ mediafinal);
        }
     }
 }
