@@ -131,5 +131,29 @@ public class MatrizExemplo {
         }
         
     }
+    public void Exercicio5Extra() {
+        int matriz[][] = new int[5][4], NotaMaior=matriz[0][3],MatriculaMaior=matriz[0][0];
+        Scanner leitura = new Scanner(System.in);
+        
+        for (int i = 0; i < matriz.length; i++) { 
+            System.out.println("Aluno " + (i+1));
+            System.out.println("Numero da matricula");
+            matriz[i][0] = leitura.nextInt();
+            System.out.println("Digite a nota da Prova: ");
+            matriz[i][1] = leitura.nextInt();
+            System.out.println("digite a Nota do Trabalho: ");
+            matriz[i][2] = leitura.nextInt();
+            matriz[i][3] = (matriz[i][1] + matriz[i][2]) / 2;
+            System.out.println("A média do aluno é "+ matriz[i][3]);
+        }
+       for (int i = 1; i < matriz.length; i++) {
+            if (matriz[i][3] > NotaMaior) {
+                NotaMaior = matriz[i][3];
+                MatriculaMaior = matriz[i][0];
+            }
+            System.out.println("Matricula com maior nota final " + MatriculaMaior);
+        
+       }
+    }
 }
 
