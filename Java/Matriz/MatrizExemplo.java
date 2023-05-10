@@ -75,6 +75,7 @@ public class MatrizExemplo {
             }
             System.out.println("|");
         }
+        
     }
 
     public void Exercicio2Extra() {
@@ -131,7 +132,6 @@ public class MatrizExemplo {
         } else {
             System.out.println("Valor não enconttrado");
         }
-
     }
 
     public void Exercicio5Extra() {
@@ -162,5 +162,49 @@ public class MatrizExemplo {
         }
         mediafinal = SomaNotas / matriz.length;
         System.out.println("Média aritmética das notas finais " + mediafinal);
+    }
+    public void Exercicio6Extra() {
+        int A[][] = new int[3][3];
+        int B[][] = new int[3][3];
+        int C[][] = new int[3][3];
+        Scanner leitura = new Scanner(System.in);
+
+        System.out.println("Digite o numero da matriz A: ");
+        for (int i = 0; i < 3 ; i++) {
+            for (int j = 0; j < 3; j++) {
+                A[i][j] = leitura.nextInt();
+                
+            }
+            
+        }
+        System.out.println("Digite o numero da matriz B: ");
+        for (int i = 0; i < 3 ; i++) {
+            for (int j = 0; j < 3; j++) {
+                B[i][j] = leitura.nextInt();
+                
+            }
+            
+        }
+        for (int i = 0; i < 3 ; i++) {
+            for (int j = 0; j < 3; j++) {
+                for (int k = 0; k < 3; k++) {
+                    C[i][j] += A[i][k] * B[k][j];
+                    
+                }
+                
+            }
+            
+        }
+        System.out.println("Resultado da multiplicação A e B: ");
+        for (int i = 0; i < 3; i++) {
+            System.out.println("| ");
+            for (int j = 0; j < 3; j++) {
+                System.out.println(C[i][j] + " ");
+                
+            }
+            System.out.println("|");
+        }
+
+        
     }
 }
