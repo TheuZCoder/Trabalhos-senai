@@ -1,10 +1,10 @@
 package POOheranca;
 
-public class professores extends Pessoas{
+public class professores extends Funcionarios{
     String materias;
     String materiais;
 
-    
+
     public String getMaterias() {
         return materias;
     }
