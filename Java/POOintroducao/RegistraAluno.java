@@ -1,4 +1,4 @@
-package Java.POOintroducao;
+package POOintroducao;
 
 public class RegistraAluno {
     
