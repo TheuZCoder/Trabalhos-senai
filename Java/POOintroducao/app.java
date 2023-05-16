@@ -5,7 +5,7 @@ public class app {
         RegistraAluno aluno1 = new RegistraAluno();
         aluno1.setNome("Ana Carla Pereira");
         aluno1.setEndereco("Rua das Garças");
-        aluno1.setIdade(17);
+        aluno1.setIdade(14);
         aluno1.setNotaCiencias(10);
         aluno1.setNotaMatematica(6);
         aluno1.setNotaPortugues(7);
@@ -18,8 +18,8 @@ public class app {
 
         RegistraAluno aluno2 = new RegistraAluno();
         aluno2.setNome("Antonio Carlos Silveira");
-        aluno2.setEndereco("Rua das Garças");
-        aluno2.setIdade(18);
+        aluno2.setEndereco("Rua das Flores");
+        aluno2.setIdade(15);
         aluno2.setNotaCiencias(10);
         aluno2.setNotaMatematica(10);
         aluno2.setNotaPortugues(10);
