@@ -1,0 +1,11 @@
+.carousel-inner {
+    display: flex;
+    align-items: center;
+    max-width: 1400px;
+    height: 400px;
+}
+
+.card-body .a {
+    display: flex;
+    justify-content: flex-end;
+}
