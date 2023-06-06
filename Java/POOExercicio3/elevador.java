@@ -63,7 +63,7 @@ public class elevador {
         if (andarAtual-nAndares>=0) {
             andarAtual-=nAndares;
         } else{
-            System.out.println("Digite um n° Válido para subir");
+            System.out.println("Digite um n° Válido para descer");
         }
         return andarAtual;
     }
