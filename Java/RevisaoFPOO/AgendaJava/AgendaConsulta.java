@@ -1,7 +1,5 @@
 package RevisaoFPOO.AgendaJava;
 
-import java.text.SimpleDateFormat;
-
 public class AgendaConsulta {
     String agendamento;
     String horario;

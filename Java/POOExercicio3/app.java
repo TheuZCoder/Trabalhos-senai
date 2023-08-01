@@ -36,8 +36,9 @@ public class app {
                 default:
                 System.out.println("digite uma ação valida");
                     break;
+                
             }
         }
+        sc.close();
     }
-
 }

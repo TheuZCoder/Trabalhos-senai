@@ -1,7 +1,5 @@
 package POOExercicio3;
 
-import java.lang.reflect.Constructor;
-
 public class elevador {
     int nMaxAndares;
     int nMaxPessoas;
