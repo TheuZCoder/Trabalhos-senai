@@ -31,3 +31,11 @@ controls.forEach((control) => {
     items[currentItem].classList.add("current-item");
   });
 });
+
+function validacao(params) {
+  let nome = document.getElementById("validationCustom01");
+  if (nome == "") {
+    alert("Nome Vazio!!")
+    return false;
+  }
+}
