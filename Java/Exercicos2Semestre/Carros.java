@@ -5,6 +5,7 @@ public class Carros {
     String modelo;
     String ano;
     String cor;
+    String all;
 
     public Carros (){}
     public Carros (String marca, String modelo, String ano, String cor){
@@ -36,6 +37,10 @@ public class Carros {
     }
     public void setCor(String cor) {
         this.cor = cor;
+    }
+    public String getALL(){
+        all = "______________\nMarca: "+ marca + "\nModelo: " + modelo + "\n Ano: "+ ano + "\nCor: " +cor; 
+        return all;
     }
     
 }
