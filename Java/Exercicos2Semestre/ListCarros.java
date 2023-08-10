@@ -5,7 +5,7 @@ import java.util.*;
 import javax.swing.JOptionPane;
 
 public class ListCarros {
-    LinkedList<Carros> carros = new LinkedList();
+    LinkedList<Carros> carros = new LinkedList<>();
     Carros carro;
 
     String marca;
@@ -48,6 +48,8 @@ public class ListCarros {
 
     public void Excluir() {
         marca = JOptionPane.showInputDialog(null,"qual marca de carro deseja excluir?" );
-
+        for (int i = 0; i < carros.size(); i++) {
+            
+        }
     }
 }
