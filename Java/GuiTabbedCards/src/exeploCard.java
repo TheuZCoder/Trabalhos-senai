@@ -24,19 +24,19 @@ public class exeploCard extends JFrame {
         JPanel card2 = new JPanel();
         card2.add(new JTextField("TextField",20));
         //painel que vai conter os meus cards
-        
-        JPanel cards = new JPanel();
+        CardLayout cl = new CardLayout();
+        JPanel cards = new JPanel(cl);
         cards.add(cards1,"card1");
         cards.add(card2,"card2");
         this.add(painel1);
-        painel1.add(cards);
+        painel1.add(cards);                                              
 
         //set do frame
         this.setDefaultCloseOperation(2);
         this.setBounds(100, 100, 300, 300);
         this.setVisible(true);
         cb.addItemListener(e->{
-            CardLayout cl = (CardLayout) (cards.getLayout());
+            
             cl.show(cards,(String) e.getItem());
         }
         );
