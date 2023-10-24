@@ -21,7 +21,6 @@ public class CadastroUsuarios extends JFrame {
     private JTextField inputIdade;
     private DefaultTableModel tableModel;
     private JTable table;
-
     private List<Usuario> usuarios = new ArrayList<>();
     private int linhaSelecionada = -1;
 
