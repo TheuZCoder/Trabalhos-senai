@@ -10,12 +10,9 @@ public class OperacoesUsuario {
     // atributos
     private List<Usuario> usuarios;
     private DefaultTableModel tableModel;
-    private JTable table;
-
     public OperacoesUsuario(List<Usuario> usuarios, DefaultTableModel tableModel, JTable table) {
         this.usuarios = usuarios;
         this.tableModel = tableModel;
-        this.table = table;
     }
 
     // métodos do CRUD

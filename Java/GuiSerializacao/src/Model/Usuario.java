@@ -19,6 +19,9 @@ public class Usuario implements Serializable{
 
     //gets and setter
     
+    public Usuario(String data, String hora, String nome2, int idadeInt) {
+    }
+
     public String getNome() {
         return nome;
     }
@@ -35,5 +38,5 @@ public class Usuario implements Serializable{
 }
 
 
-//gets and setter
+
 
