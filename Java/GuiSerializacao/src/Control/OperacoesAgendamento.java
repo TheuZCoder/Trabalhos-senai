@@ -16,7 +16,7 @@ public class OperacoesAgendamento {
         this.agendas = agendas;
         this.tableModel = tableModel;
     }
-
+    
     // métodos do CRUD
     public void agendarAgenda(String data, String hora, String usuario, String descrição) {
         Agenda agenda = new Agenda(data, hora, usuario, descrição);

@@ -28,11 +28,11 @@ public class Serializacao {
     // Método para deserializar uma lista de usuários a partir de um arquivo binário
     public static List<Usuario> deserializar(String arquivo) {
         try {
-            // Abre o arquivo para leitura
-            ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream(arquivo));
-
-            // Lê a lista de usuários do arquivo e a converte de volta para a lista
-            return (List<Usuario>) inputStream.readObject();
+            try (// Abre o arquivo para leitura
+            ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream(arquivo))) {
+                // Lê a lista de usuários do arquivo e a converte de volta para a lista
+                return (List<Usuario>) inputStream.readObject();
+            }
         } catch (IOException | ClassNotFoundException e) {
             // Em caso de erro na deserialização, imprime a mensagem de erro
             System.err.println("Erro ao deserializar os dados: " + e.getMessage());
@@ -56,11 +56,11 @@ public class Serializacao {
     // Método para deserializar uma lista de usuários a partir de um arquivo binário
     public static List<Agenda> deserializar2(String arquivo2) {
         try {
-            // Abre o arquivo para leitura
-            ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream(arquivo2));
-
-            // Lê a lista de usuários do arquivo e a converte de volta para a lista
-            return (List<Agenda>) inputStream.readObject();
+            try (// Abre o arquivo para leitura
+            ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream(arquivo2))) {
+                // Lê a lista de usuários do arquivo e a converte de volta para a lista
+                return (List<Agenda>) inputStream.readObject();
+            }
         } catch (IOException | ClassNotFoundException e) {
             // Em caso de erro na deserialização, imprime a mensagem de erro
             System.err.println("Erro ao deserializar os dados: " + e.getMessage());
