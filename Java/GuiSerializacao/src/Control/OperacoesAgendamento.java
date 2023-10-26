@@ -51,4 +51,15 @@ public class OperacoesAgendamento {
                     new Object[] { agenda.getData(), agenda.getHora(), agenda.getUsuario(), agenda.getDescricao() });
         }
     }
+
+    //=======--------------verificações---------===========//
+
+    public boolean isInputValid(String data, String hora, String usuario, String descricao) {
+        if ((data.equals(null) || data.equals("")) || (hora.equals(null) || hora.equals("")) || (usuario.equals(null) || usuario.equals("")) || (descricao.equals(null) || descricao.equals(""))) {
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
 }

@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JButton;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
@@ -98,12 +99,19 @@ public class Agendamento extends JPanel {
         cadastrarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                operacoes.agendarAgenda(inputData.getText(), inputHora.getText(), inputUsuario.getText(),
-                        inputDescricao.getText());
-                inputUsuario.setText("");
-                inputDescricao.setText("");
+                if(operacoes.isInputValid(inputData.getText(), inputHora.getText(), inputUsuario.getText(), inputDescricao.getText())){
+                    operacoes.agendarAgenda(inputData.getText(), inputHora.getText(), inputUsuario.getText(), inputDescricao.getText());
+                    inputData.setText("");
+                    inputHora.setText("");
+                    inputUsuario.setText("");
+                    inputDescricao.setText("");
+                }
+                else{
+                    JOptionPane.showMessageDialog(null, "Preencha os campos");
+                }
             }
         });
+
         atualizarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
