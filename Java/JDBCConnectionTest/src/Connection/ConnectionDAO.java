@@ -6,6 +6,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import javax.swing.JOptionPane;
+
 public class ConnectionDAO {
     private Connection connection;
 
@@ -48,6 +50,52 @@ public class ConnectionDAO {
             throw new RuntimeException("Erro ao inserir dados no banco de dados.", e);
         } finally {
             ConnectionFactory.closeConnection(this.connection, stmt);
+        }
+    }
+    //Apagar um dado da tabela
+    public void apagarId(int id) throws SQLException{
+        String sql = "DELETE FROM MINHA_TABELA WHERE ID = ?" ;
+        try(PreparedStatement stmt = connection.prepareStatement(sql)){
+            stmt.setInt(1, id);
+            stmt.executeUpdate();
+        } catch(Exception e){
+            JOptionPane.showMessageDialog( null, "aaaaa");
+        }         
+    }
+    //Atualizar um dado da tabela
+    public void atualizarID(int id, String novoNome, String novoEmail){
+        String sql = "UPDATE MINHA_TABELA SET nome = ? , email = ? WHERE ID = ?";//UPDATE nomeDaTabela SET 
+        try (PreparedStatement stmt = connection.prepareStatement(sql)) {
+            stmt.setString(1, novoNome);
+            stmt.setString(2, novoEmail);
+            stmt.setInt(3, id);
+            stmt.executeUpdate();
+            System.out.println("Dados inseridos com sucesso");
+        } catch (SQLException e) {
+            throw new RuntimeException("Erro ao inserir dados no banco de dados.", e);
+        } finally {
+            ConnectionFactory.closeConnection(this.connection);
+        }
+    }
+    //Listar todos os valores cadastrados
+    public void listarTodos() { // Colocar na tabela
+        PreparedStatement stmt = null;
+        ResultSet rs = null;
+        String sql = "SELECT * FROM minha_tabela";
+
+        try {
+            stmt = connection.prepareStatement(sql);
+            rs = stmt.executeQuery();
+            while (rs.next()) {
+
+                System.out.println("id : "+rs.getInt("id")+
+                " nome: "+rs.getString("nome")+
+                " email: "+rs.getString("email")); 
+            }
+        } catch (SQLException ex) {
+            System.out.println(ex);
+        } finally {
+            ConnectionFactory.closeConnection(connection);
         }
     }
 }

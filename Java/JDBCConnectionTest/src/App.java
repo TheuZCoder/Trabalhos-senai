@@ -2,6 +2,6 @@ import Connection.ConnectionDAO;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        new ConnectionDAO().inserir("Matheus", "matheus@gmail.com");;
+        new ConnectionDAO().atualizarID(3, "Theuz ", "Theuz@gmail.com");
     }
 }
