@@ -10,6 +10,7 @@ import { VagasComponent } from './view/vagas/vagas.component';
 import { PainelVagasComponent } from './view/painel-vagas/painel-vagas.component';
 import { HeaderComponent } from './template/header/header.component';
 import { FooterComponent } from './template/footer/footer.component';
+import { PainelCurriculosComponent } from './view/painel-curriculos/painel-curriculos.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FooterComponent } from './template/footer/footer.component';
     VagasComponent,
     PainelVagasComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    PainelCurriculosComponent
   ],
   imports: [
     BrowserModule,
