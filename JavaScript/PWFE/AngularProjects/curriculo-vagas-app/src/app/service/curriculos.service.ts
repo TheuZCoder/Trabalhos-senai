@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class CurriculoService {
-  private apiUrl = 'http://localhost:3000/vagas'; // Caminho para o arquivo JSON
+  private apiUrl = 'http://localhost:3000/curriculos'; // Caminho para o arquivo JSON
 
   constructor(private http: HttpClient) {}
 

@@ -21,5 +21,13 @@
       "descricao": "Trabalhar com Desenvolvimento Web",
       "salario": 10000
     }
+  ],
+  "curriculos": [
+    {
+      "nome": "Matheus",
+      "foto": "foto1.jpg",
+      "escolaridade": "Ensino médio completo",
+      "experiencia": "Trabalhou na empresa etc"
+    }
   ]
 }
