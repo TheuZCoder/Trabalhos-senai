@@ -5,6 +5,7 @@ import java.util.List;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
@@ -142,18 +143,24 @@ public class JanelaCarros extends JPanel {
         // Configura a ação do botão "apagar" para excluir um registro no banco de dados
         apagar.addActionListener(new ActionListener() {
             @Override
+            
             public void actionPerformed(ActionEvent e) {
-                // Chama o método "apagar" do objeto operacoes com o valor do campo de entrada
-                // "placa"
-                operacoes.apagar(carPlacaField.getText());
-
-                // Limpa os campos de entrada após a operação de exclusão
-                carMarcaField.setText("");
-                carModeloField.setText("");
-                carAnoField.setText("");
-                carPlacaField.setText("");
-                carValorField.setText("");
-                atualizarTabela();
+                if (carPlacaField.equals(null)) {
+                    operacoes.apagar(carPlacaField.getText());
+                    // Chama o método "apagar" do objeto operacoes com o valor do campo de entrada
+                    // "placa"
+    
+                    // Limpa os campos de entrada após a operação de exclusão
+                    carMarcaField.setText("");
+                    carModeloField.setText("");
+                    carAnoField.setText("");
+                    carPlacaField.setText("");
+                    carValorField.setText("");
+                    atualizarTabela();
+                    
+                } else {
+                   JOptionPane.showMessageDialog(null, "Selecione um carro a ser apagado!!");
+                }
             }
             
         });
