@@ -27,8 +27,7 @@ public class CarrosControl {
         for (Carros carro : carros) {
             // Adiciona os dados de cada carro como uma nova linha na tabela Swing
             tableModel.addRow(new Object[] { carro.getModelo(), carro.getMarca(),
-
-                    carro.getAno(), carro.getValor(), carro.getPlaca() });
+            carro.getAno(), carro.getValor(), carro.getPlaca() });
         }
     }
 

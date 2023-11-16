@@ -92,6 +92,7 @@ public class JanelaCarros extends JPanel {
                     carAnoField.setText((String) table.getValueAt(linhaSelecionada, 2));
                     carPlacaField.setText((String) table.getValueAt(linhaSelecionada, 3));
                     carValorField.setText((String) table.getValueAt(linhaSelecionada, 4));
+                    atualizarTabela();
                 }
             }
         });
@@ -116,6 +117,7 @@ public class JanelaCarros extends JPanel {
                 carAnoField.setText("");
                 carPlacaField.setText("");
                 carValorField.setText("");
+                atualizarTabela();
             }
         });
 
@@ -133,6 +135,7 @@ public class JanelaCarros extends JPanel {
                 carAnoField.setText("");
                 carPlacaField.setText("");
                 carValorField.setText("");
+                atualizarTabela();
             }
         });
 
@@ -150,7 +153,9 @@ public class JanelaCarros extends JPanel {
                 carAnoField.setText("");
                 carPlacaField.setText("");
                 carValorField.setText("");
+                atualizarTabela();
             }
+            
         });
 
     }
@@ -166,5 +171,4 @@ public class JanelaCarros extends JPanel {
         }
 
     }
-
 }
