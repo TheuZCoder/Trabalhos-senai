@@ -9,11 +9,11 @@ export class Curriculo {
     sobrenome: string,
     foto: string,
     escolaridade: string,
-    experiencia: string
+    experiencia: string,
   ){
     this.nome = nome;
     this.sobrenome = sobrenome;
-    this.foto = foto
+    this.foto = foto;
     this.escolaridade = escolaridade;
     this.experiencia = experiencia;
   }

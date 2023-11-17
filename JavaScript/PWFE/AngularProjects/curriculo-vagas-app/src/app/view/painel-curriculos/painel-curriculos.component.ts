@@ -10,7 +10,7 @@ export class PainelCurriculosComponent implements OnInit {
 listarcurriculo(_t45: Curriculo) {
 throw new Error('Method not implemented.');
 }
-  public curriculo: Curriculo = new Curriculo('', '', '', '');
+  public curriculo: Curriculo = new Curriculo('','', '', '', '');
   // Uma instância de 'Vaga' para rastrear os dados do formulário
   public curriculos: Curriculo[] = [];
   // Uma matriz para armazenar as vagas listadas
@@ -27,6 +27,7 @@ throw new Error('Method not implemented.');
         // Mapeia os dados retornados para objetos 'Vaga'
         return new Curriculo(
           item.nome,
+          item.sobrenome,
           item.foto,
           item.escolaridade,
           item.experiencia,
@@ -44,7 +45,7 @@ throw new Error('Method not implemented.');
     this._curriculosService.cadastrarVaga(this.curriculo).subscribe(
       () => {
         // Após cadastrar com sucesso
-        this.curriculo = new Curriculo('', '', '', ''); // Limpa o formulário
+        this.curriculo = new Curriculo('', '','', '', ''); // Limpa o formulário
         this.listarVagas(); // Atualiza a lista de vagas
       },
       (err) => {
@@ -58,7 +59,7 @@ throw new Error('Method not implemented.');
     this._curriculosService.atualizarVaga(String, this.curriculo).subscribe(
       () => {
         // Após atualizar com sucesso
-        this.curriculo = new Curriculo('', '', '', ''); // Limpa o formulário
+        this.curriculo = new Curriculo('','', '', '', ''); // Limpa o formulário
         this.listarVagas(); // Atualiza a lista de vagas
       },
       (err) => {
@@ -71,7 +72,7 @@ throw new Error('Method not implemented.');
     this._curriculosService.removerVaga(String).subscribe(
       () => {
         // Após excluir com sucesso
-        this.curriculo = new Curriculo('', '', '', ''); // Limpa o formulário
+        this.curriculo = new Curriculo('','', '', '', ''); // Limpa o formulário
         this.listarVagas(); // Atualiza a lista de vagas
       },
       (err) => {

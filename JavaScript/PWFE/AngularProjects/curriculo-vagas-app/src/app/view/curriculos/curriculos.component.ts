@@ -22,6 +22,7 @@ export class CurriculosComponent {
         // Mapeia os dados retornados para o modelo Vaga
         return new Curriculo(
           item.nome,
+          item.sobrenome,
           item.foto,
           item.escolaridade,
           item.experiencia,
