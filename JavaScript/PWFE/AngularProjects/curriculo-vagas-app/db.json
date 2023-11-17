@@ -24,11 +24,22 @@
   ],
   "curriculos": [
     {
+      "id": 1,
       "nome": "Matheus",
       "sobrenome": "Rodrigues",
+      "salario": 1000,
       "foto": "foto1.jpg",
       "escolaridade": "Ensino médio completo",
       "experiencia": "Tenho"
+    },
+    {
+      "id": 2,
+      "nome": "Rogerio",
+      "sobrenome": "Pinto",
+      "salario": "011",
+      "escolaridade": "nao tem",
+      "experiencia": "só de programa",
+      "foto": ""
     }
   ]
 }

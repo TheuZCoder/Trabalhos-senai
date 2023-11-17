@@ -11,24 +11,24 @@ export class CurriculoService {
 
   constructor(private http: HttpClient) {}
 
-  // Obtém a lista de vagas a partir do arquivo JSON
-  getVagas(): Observable<Curriculo[]> {
+  // Obtém a lista de Curriculos a partir do arquivo JSON
+  getCurriculos(): Observable<Curriculo[]> {
     return this.http.get<Curriculo[]>(this.apiUrl);
   }
 
-  // Cadastra uma nova vaga no servidor
-  cadastrarVaga(vaga: Curriculo): Observable<Curriculo[]> {
-    return this.http.post<Curriculo[]>(this.apiUrl, vaga);
+  // Cadastra uma nova Curriculo no servidor
+  cadastrarCurriculo(Curriculo: Curriculo): Observable<Curriculo[]> {
+    return this.http.post<Curriculo[]>(this.apiUrl, Curriculo);
   }
 
-  // Atualiza uma vaga existente no servidor
-  atualizarVaga(id: any, vaga: Curriculo): Observable<Curriculo[]> {
+  // Atualiza uma Curriculo existente no servidor
+  atualizarCurriculo(id: any, Curriculo: Curriculo): Observable<Curriculo[]> {
     const urlAtualizar = `${this.apiUrl}/${id}`;
-    return this.http.put<Curriculo[]>(urlAtualizar, vaga);
+    return this.http.put<Curriculo[]>(urlAtualizar, Curriculo);
   }
 
-  // Remove uma vaga do servidor
-  removerVaga(id: any): Observable<Curriculo[]> {
+  // Remove uma Curriculo do servidor
+  removerCurriculo(id: any): Observable<Curriculo[]> {
     const urlDeletar = `${this.apiUrl}/${id}`;
     return this.http.delete<Curriculo[]>(urlDeletar);
   }
