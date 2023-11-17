@@ -145,7 +145,7 @@ public class JanelaCarros extends JPanel {
             @Override
             
             public void actionPerformed(ActionEvent e) {
-                if (carPlacaField.equals(null)) {
+                if (!carPlacaField.equals(null)) {
                     operacoes.apagar(carPlacaField.getText());
                     // Chama o método "apagar" do objeto operacoes com o valor do campo de entrada
                     // "placa"
