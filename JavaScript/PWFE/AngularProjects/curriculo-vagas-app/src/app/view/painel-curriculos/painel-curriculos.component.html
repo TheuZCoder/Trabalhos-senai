@@ -15,10 +15,11 @@
   <table class="table">
     <thead>
       <tr>
-        <th>Código da curriculo</th>
-        <th>curriculo</th>
-        <th>Descrição da curriculo</th>
-        <th>experiencia</th>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+        <th>Escolaridade</th>
+        <th>Experiencia</th>
+        <th>Ações</th>
       </tr>
     </thead>
     <tbody>
@@ -26,7 +27,7 @@
         <td>{{ curriculo.nome }}</td>
         <td>{{ curriculo.sobrenome }}</td>
         <td>{{ curriculo.escolaridade }}</td>
-        <td>R$ {{ curriculo.experiencia }},00</td>
+        <td>{{ curriculo.experiencia }}</td>
         <td>
           <button type="button" (click)="listarcurriculo(curriculo)" class="btn-listar">
             Listar

@@ -25,9 +25,10 @@
   "curriculos": [
     {
       "nome": "Matheus",
+      "sobrenome": "Rodrigues",
       "foto": "foto1.jpg",
       "escolaridade": "Ensino médio completo",
-      "experiencia": "Trabalhou na empresa etc"
+      "experiencia": "Tenho"
     }
   ]
 }
