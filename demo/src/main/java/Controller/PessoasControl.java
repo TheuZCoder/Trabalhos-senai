@@ -12,7 +12,7 @@ public class PessoasControl {
     private JTable table;
 
     // Construtor
-    public PessoasControl(List<Pessoas> carros, DefaultTableModel tableModel, JTable table)
+    public PessoasControl(List<Pessoas> pessoas, DefaultTableModel tableModel, JTable table)
     {
 
         this.pessoas = pessoas;
