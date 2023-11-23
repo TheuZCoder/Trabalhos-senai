@@ -5,6 +5,7 @@ public class Pessoas {
     private String endereco;
     private String numtele;
     private String cpf;
+    boolean funcionário;
 
     //métodos
     public Pessoas(String nome, String endereco, String numtele, String cpf) {
@@ -12,6 +13,7 @@ public class Pessoas {
         this.endereco = endereco;
         this.numtele = numtele;
         this.cpf = cpf;
+        this.funcionário = funcionário;
     }
 
 
@@ -40,6 +42,14 @@ public class Pessoas {
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
+
+    public boolean isFuncionário() {
+        return funcionário;
+    }
+    public void setFuncionário(boolean funcionário) {
+        this.funcionário = funcionário;
+    }
+    
 
     
 }

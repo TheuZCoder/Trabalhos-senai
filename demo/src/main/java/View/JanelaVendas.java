@@ -26,6 +26,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.awt.*;
 import Model.Carros;
+import Model.Login;
 import Model.Vendas;
 import Model.Pessoas;
 
@@ -53,7 +54,7 @@ public class JanelaVendas extends JPanel {
     JComboBox<String> pessoasComboBox;
 
     // Construtor
-    public  JanelaVendas() {
+    public  JanelaVendas(Login logado) {
         JPanel painel1 = new JPanel(new BorderLayout());
         JPanel inputPanel = new JPanel();
         JPanel buttons = new JPanel();

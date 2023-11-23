@@ -26,6 +26,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.ActionEvent;
 
 import Model.Carros;
+import Model.Login;
 
 public class JanelaCarros extends JPanel {
     // Atributos(componentes)
@@ -37,7 +38,7 @@ public class JanelaCarros extends JPanel {
     private int linhaSelecionada = -1;
 
     // Construtor(GUI-JPanel)
-    public JanelaCarros() {
+    public JanelaCarros(Login logado) {
         super();
 
         // entrada de dados

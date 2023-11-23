@@ -92,7 +92,7 @@ public class PessoasDAO {
     public void atualizarPessoa(String nome, String endereco, String numtele, String cpf ) {
         PreparedStatement stmt = null;
         // Define a instrução SQL parametrizada para atualizar dados pela cpf
-        String sql = "UPDATE pessoas_lojacarros SET nome = ?, endereco = ?, numtele = ?,WHERE cpf = ?";
+        String sql = "UPDATE pessoas_lojacarros SET nome = ?, endereco = ?, numtele = ?,WHERE cpf = ?,";
         try {
             stmt = connection.prepareStatement(sql);
             stmt.setString(1, nome);
