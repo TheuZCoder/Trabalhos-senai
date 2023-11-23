@@ -42,7 +42,7 @@ public class PessoasControl {
         } else {
             // Exibe uma mensagem de erro para o usuário
             JOptionPane.showMessageDialog(null,
-                    "Entradas inválidas. Por favor, verifique se foi colocado Modelo, Marca , Ano(xxxx), Placa(xxx-xxxx) e valor (R$0,00).",
+                    "Entradas inválidas. Por favor, verifique se foi colocado . e - no CPF tambem - no numero de telefone .",
                     "Erro de Validação", JOptionPane.ERROR_MESSAGE);
         }
     }
@@ -50,7 +50,7 @@ public class PessoasControl {
     private boolean validarEntradas(String numtele, String cpf) {
         numtele = numtele.trim();
         // Verifica se o ano contém apenas números e tem comprimento 4
-        if (!cpf.matches("\\d{4}") && !numtele.matches("[A-Z]{3}-\\d{4}")) {
+        if (!cpf.matches("\\d{3}\\.\\d{3}\\.\\d{3}-\\d{2}") && !numtele.matches("\\d{5}-\\d{4}")) {
             return false;
         }
         // Se passar por ambas as verificações, consideramos as entradas válidas
