@@ -13,8 +13,10 @@ public class JanelaPrincipal extends JFrame{
         // criandos as tabs
         // tab1 carros
         JanelaCarros tab1 = new JanelaCarros();
+        JanelaPessoas tab2 = new JanelaPessoas();
       
         jTPane.add("Carros", tab1);
+        jTPane.add("Pessoas", tab2);
 
         setBounds(100, 100, 600, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
